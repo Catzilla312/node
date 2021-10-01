@@ -21,7 +21,7 @@ router.delete('/:id',async (req,res)=>{
     res.status(200).send();
 });
 async function getDataCollection(){
-    const client = mongodb.MongoClient.connect(`mongodb://AdminMono:123123123@127.0.0.1:27017/admin`)
+    const client = mongodb.MongoClient.connect(`mongodb://AdminMono:passsss@127.0.0.1:27017/admin`)
     return (await client).db("vueExpress").collection("vueData");
 }
 
